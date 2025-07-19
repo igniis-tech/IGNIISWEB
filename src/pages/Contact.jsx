@@ -7,7 +7,6 @@ import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineMail } from "react-icons/md";
 import { FaTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,10 +25,9 @@ const Contact = () => {
     console.log('Form Data:', formData);;
 
     emailjs.send(
-      'service_c9l09rw',
-      'template_9ug0isn',
+     
       formData,
-      '_7sbHibaZRG7o3nvH'
+     
     ).then(() => {
       toast.success('Thank you! Your message has been sent.');
       setFormData({ name: '', email: '', phone: '', message: '' });
