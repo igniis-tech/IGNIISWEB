@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaBrain, FaChartLine } from 'react-icons/fa';
 import { GiBiceps } from 'react-icons/gi';
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
 
 const services = [
   {
@@ -27,7 +27,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto text-center">
         {/* Heading */}
         <p className="text-blue-700 text-sm font-semibold uppercase tracking-wide mb-2">Services</p>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl cursor-follow md:text-4xl font-bold text-gray-900 mb-4">
           Our Training Programs
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
@@ -40,9 +40,9 @@ const Services = () => {
             <motion.div
               key={index}
               initial={{ opacity: 0, x: 0 }}
-              whileInView={{ opacity: 3, x: 10 }}
+              whileInView={{ opacity: 3, y: 10 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.3 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               className="bg-blue-50 hover:bg-white hover:shadow-md transition duration-300 rounded-2xl p-6 text-left"
             >
             <a href='#' className='cursor-pointer flex flex-col hover:transform-3d hover:scale-105 transition-transform duration-300'>
